@@ -1,12 +1,11 @@
-function Todos() {
+type todosProps = { todos: string[] };
+
+export const Todos = (props: todosProps) => {
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Learn Typescript</li>
-      <li></li>
-      <li></li>
+      {props.todos.map((todo) => (
+        <li key={todo}>{todo}</li>
+      ))}
     </ul>
   );
-}
-
-export default Todos;
+};
