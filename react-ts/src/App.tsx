@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <Todos todos={todos} />
+      <Todos items={todos} />
     </div>
   );
 }

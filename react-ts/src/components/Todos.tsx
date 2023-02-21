@@ -1,13 +1,17 @@
 import Todo from "../models/todo";
+import { TodoItem } from "./TodoItem";
 
-type todosProps = { todos: Todo[] };
-
-export const Todos = (props: todosProps) => {
+interface Props {
+  items: Todo[];
+}
+export const Todos = ({ items }: Props) => {
   return (
-    <ul>
-      {props.todos.map((todo) => (
-        <li key={todo.id}>{todo.text}</li>
-      ))}
-    </ul>
+    <div>
+      <ul>
+        {items.map((item) => (
+          <TodoItem key={item.id} todo={item} />
+        ))}
+      </ul>
+    </div>
   );
 };
