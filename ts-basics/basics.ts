@@ -66,4 +66,6 @@ const demoArray = [1, 2, 3];
 
 const updatedArray = insertAtBeginning(demoArray, -1); // [-1, 1,2,3]
 
-updatedArray[0].split("");
+const stringArray = insertAtBeginning(["a", "b", "c"], "d");
+
+// updatedArray[0].split("");
