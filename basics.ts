@@ -10,6 +10,8 @@ age = 12;
 
 let username: string;
 
+username = "Zidane";
+
 let isInstructor: boolean;
 
 isInstructor = true;
@@ -38,3 +40,9 @@ let people: {
   name: string;
   age: number;
 }[];
+
+//Type Inference
+
+let course = "React - The Complete Guide";
+
+//course = 12234;
